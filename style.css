@@ -43,15 +43,17 @@ body {
     align-items: center; /* Los centra verticalmente */
     gap: 10px; /* Deja un espacio de 10px entre la imagen y el texto */
 }
-
 .logo-img {
     height: 50px; /* Controla el alto del logo (puedes cambiarlo a 40px si lo quieres más chico) */
     width: auto;  /* Hace que el ancho se ajuste automáticamente para no deformar la imagen */
     object-fit: contain; /* Asegura que la imagen mantenga su proporción original dentro del contenedor */
     border-radius: 50%; /* Opcional: Hace el logo circular si tu imagen es cuadrada */
 }
+
 .logo h2 {
     color: white;
+    width: 50px; /* Ajusta el ancho del logo según sea necesario */
+    height: 40px; /* Ajusta la altura automáticamente */
 }
 .logo span {
     color: var(--secondary-color);
@@ -166,20 +168,28 @@ body {
 
 /* --- Sección Video --- */
 .video-section {
-    padding: 40px 5%;
+    padding: 60px 5%; /* Más espacio arriba y abajo para que respire */
     text-align: center;
+    background-color: #fcfcfc;
 }
 
 .video-container {
-    max-width: 800px;
+    max-width: 650px; /* Tamaño ideal y elegante para pantallas grandes */
     margin: 0 auto;
-    aspect-ratio: 16 / 9; /* Mantiene la proporción del video siempre bien */
+    border-radius: 16px; /* Esquinas curvas suaves que combinan con el carrusel */
+    overflow: hidden;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08); /* Sombra difusa premium */
+    background-color: #1a1a1a; /* Fondo oscuro elegante de respaldo */
+    border: 1px solid rgba(0, 0, 0, 0.05);
 }
 
-.video-container iframe {
+.local-video {
     width: 100%;
-    height: 100%;
-    border-radius: 8px;
+    max-height: 450px; /* Evita que el video se vuelva gigantesco hacia abajo */
+    display: block;
+    
+    /* LA MAGIA AQUÍ: */
+    object-fit: contain; /* Ajusta el video a la perfección manteniendo su proporción original sin importar si es horizontal o vertical */
 }
 
 /* --- Sección Contacto con Grid --- */
