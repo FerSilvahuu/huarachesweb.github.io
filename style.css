@@ -43,6 +43,7 @@ body {
     align-items: center; /* Los centra verticalmente */
     gap: 10px; /* Deja un espacio de 10px entre la imagen y el texto */
 }
+
 .logo-img {
     height: 50px; /* Controla el alto del logo (puedes cambiarlo a 40px si lo quieres más chico) */
     width: auto;  /* Hace que el ancho se ajuste automáticamente para no deformar la imagen */
