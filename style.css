@@ -38,7 +38,17 @@ body {
     top: 0;
     z-index: 1000;
 }
-
+.logo {
+    display: flex; /* Alinea la imagen y el texto uno al lado del otro */
+    align-items: center; /* Los centra verticalmente */
+    gap: 10px; /* Deja un espacio de 10px entre la imagen y el texto */
+}
+.logo-img {
+    height: 50px; /* Controla el alto del logo (puedes cambiarlo a 40px si lo quieres más chico) */
+    width: auto;  /* Hace que el ancho se ajuste automáticamente para no deformar la imagen */
+    object-fit: contain; /* Asegura que la imagen mantenga su proporción original dentro del contenedor */
+    border-radius: 50%; /* Opcional: Hace el logo circular si tu imagen es cuadrada */
+}
 .logo h2 {
     color: white;
 }
